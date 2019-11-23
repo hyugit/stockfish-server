@@ -1,0 +1,29 @@
+{
+  "name": "stockfish-server",
+  "version": "0.0.1",
+  "description": "A simple server running stockfish.js engine",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyugit/stockfish-server.git"
+  },
+  "keywords": [
+    "stockfish",
+    "nodejs",
+    "server"
+  ],
+  "author": "hyugit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyugit/stockfish-server/issues"
+  },
+  "homepage": "https://github.com/hyugit/stockfish-server#readme"
+}
