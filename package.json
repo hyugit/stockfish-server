@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/hyugit/stockfish-server.git"
   },
+  "bin": {
+    "stockfish-server": "server.js"
+  },
   "keywords": [
     "stockfish",
     "nodejs",
