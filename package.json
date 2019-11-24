@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
+    "pkg": "^4.4.0",
     "stockfish": "^10.0.2"
   },
   "devDependencies": {},
@@ -18,6 +19,11 @@
   },
   "bin": {
     "stockfish-server": "server.js"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/stockfish/src/stockfish.wasm"
+    ]
   },
   "keywords": [
     "stockfish",
