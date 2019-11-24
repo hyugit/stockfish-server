@@ -3,8 +3,8 @@
 const express = require('express')
 const app = express()
 const port = 8080
-var stockfish = require("./stockfish.js");
-var engine = stockfish();
+const stockfish = require("stockfish");
+const engine = stockfish();
 
 engine.onmessage = function(msg) {
   console.log(msg);
