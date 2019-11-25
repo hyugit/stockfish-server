@@ -11,7 +11,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "package": "./node_modules/.bin/pkg ."
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,7 @@
     "server"
   ],
   "author": "hyugit",
-  "license": "MIT",
+  "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/hyugit/stockfish-server/issues"
   },
