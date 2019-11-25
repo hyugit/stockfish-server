@@ -5,6 +5,7 @@ const app = express()
 const port = 8080
 const stockfish = require("stockfish");
 const engine = stockfish();
+const fenregex = "/^([rnbqkpRNBQKP1-8]+\/){7}([rnbqkpRNBQKP1-8]+)\s[bw]\s(-|K?Q?k?q?)\s(-|[a-h][36])\s(0|[1-9][0-9]*)\s([1-9][0-9]*)/"
 
 engine.onmessage = function(msg) {
   console.log(msg);
@@ -17,6 +18,11 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 app.post('/', (request, response) => {
 
+  if (!request.body.fen.match(fenregex)) {
+    response.send("Invalid fen string");
+    return;
+  }
+  
 // if chess engine replies
   engine.onmessage = function(msg) {
     console.log(msg);
