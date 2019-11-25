@@ -13,6 +13,8 @@ npm start
 Alternatively, you can compile the repo by running `npm i && ./node_modules/.bin/pkg .`,
 and get a standalone binary for your operating system.
 
+Once it is running, you can use the **test.sh** script in the repo to try it out.
+
 ## How does it work
 
 It takes a [fen string](https://www.chessprogramming.org/Forsyth-Edwards_Notation) of a chess game,
